@@ -1,0 +1,1 @@
+var json_Podar_International_school_2 = {"type":"FeatureCollection","name":"Podar_International_school_2","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null,"Name":"Podar International School, Mysore"},"geometry":{"type":"Point","coordinates":[76.607305257572094,12.33300181081435]}}]}

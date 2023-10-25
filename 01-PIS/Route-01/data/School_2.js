@@ -1,0 +1,1 @@
+var json_School_2 = {"type":"FeatureCollection","name":"School_2","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"School Nam":"Podar International School, Mysuru"},"geometry":{"type":"Point","coordinates":[76.607318531096055,12.332963870776831]}}]}

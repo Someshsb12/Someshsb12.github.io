@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Bus Route Information</title>
+    <link rel="stylesheet" href="Main_Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body> 
+    <!-- <div class="sym"><img src="Elena_Logo.jpg" alt="Elena Geo System Logo.">
+    </div> -->
+    <div class="name">
+        <h1>School Bus Route Information System   <i class="fa-solid fa-bus"></i></h1>
+    </div>
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i>  Podar International School, Mysore</span>
+        <select class="route-dropdown_01" id="school1-route">
+            <option value="">Select Route </option>
+            <option value="Route 1">Route-01  Vidyaranayapuram.    </option>
+            <option value="Route 2">Route-02  Udayagiri MES College   </option>
+            <option value="Route 3">Route-03  Dattagalli </option>
+            <option value="Route 4">Route-04  Prashanthnagar Bogadi </option>
+        </select>
+        <button class="show-map-button_01"onclick="showMap_1('school1')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Dayananda Arya Vidya Public School, Mysore </span>
+        <select class="route-dropdown_02" id="school2-route">
+            <option value="">Select Route </option>
+            <option value="Route 1">Route 1  Gejjagalli </option>
+            <option value="Route 2">Route 2  Marasettihilli. </option>
+            <option value="Route 3">Route 3  Nazarbad       </option>
+        </select>
+        <button class="show-map-button_02" onclick="showMap_2('school2')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+     <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Mahabodhi School, Mysuru </span>
+        <select class="route-dropdown_03" id="school3-route">
+            <option value="">Select Route </option>
+            <option value="Route 1">Route 1  Visveshwara Nagar </option>
+            <option value="Route 2">Route 2  Dattagalli Road </option>
+            <option value="Route 3">Route 3  Vijaynagar. </option>
+        </select>
+        <button class="show-map-button_03" onclick="showMap_3('school3')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Royale Concorde International School, Mysore  </span>
+        <select class="route-dropdown_04" id="school4-route">
+            <option value="">Select Route </option>
+            <option value="Route 1">Route 1  Somanath Nagar </option>
+            <option value="Route 2">Route 2  Basavanpura    </option>
+            <option value="Route 3">Route 3  kuvempu Nagar       </option>
+        </select>
+        <button class="show-map-button_04" onclick="showMap_4('school4')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Manasarowar Pushkarini Vidyashrama, Mysore </span>
+        <select class="route-dropdown_05" id="school5-route">
+            <option value="">Select Route </option>
+            <option value="Route 1">Route 1  GSS </option>
+            <option value="Route 2">Route 2 Gangotri Layout</option>
+            <option value="Route 3">Route 3 </option>
+        </select>
+        <button class="show-map-button_05" onclick="showMap_5('school5')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Amrita Vidyalayam, Mysuru</span>
+        <select class="route-dropdown_06" id="school6-route" >
+            <option value=""> Select Route  </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_06" onclick="showMap_6('school6')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> St. Thomas Institutions, Mysore</span>
+        <select class="route-dropdown_07" id="school7-route" >
+            <option value=""> Select Route  </option>
+            <option value="Route 1">Route 1   </option>
+            <option value="Route 2">Route 2   </option>
+            <option value="Route 3">Route 3   </option>
+        </select>
+        <button class="show-map-button_07" onclick="showMap_7('school7')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Maharshi Public School, Mysore</span>
+        <select class="route-dropdown_08" id="school8-route" >
+            <option value=""> Select Route    </option>
+            <option value="Route 1">Route 1   </option>
+            <option value="Route 2">Route 2   </option>
+            <option value="Route 3">Route 3   </option>
+        </select>
+        <button class="show-map-button_08" onclick="showMap_8('school8')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i>  Shikshkarni Central School Mysore</span>
+        <select class="route-dropdown_09" id="school9-route" >
+            <option value=""> Select Route       </option>
+            <option value="Route 1">Route 1      </option>
+            <option value="Route 2">Route 2      </option>
+            <option value="Route 3">Route 3      </option>
+        </select>
+        <button class="show-map-button_09" onclick="showMap_9('school9')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Maharshi Public School, Mysore</span>
+        <select class="route-dropdown_10" id="school10-route" >
+            <option value=""> Select Route       </option>
+            <option value="Route 1">Route 1      </option>
+            <option value="Route 2">Route 2      </option>
+            <option value="Route 3">Route 3      </option>
+        </select>
+        <button class="show-map-button_10" onclick="showMap_10('school10')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Seventh Day Adventist High School, Mysore</span>
+        <select class="route-dropdown_11" id="school11-route" >
+            <option value=""> Select Route      </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_11" onclick="showMap_11('school11')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Sri Ramakrishna Vidyashala, Mysore</span>
+        <select class="route-dropdown_12" id="school12-route" >
+            <option value=""> Select Route      </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_12" onclick="showMap_12('school12')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> JSS English Medium High School, Mysore </span>
+        <select class="route-dropdown_13" id="school13-route" >
+            <option value=""> Select Route      </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_13" onclick="showMap_13('school13')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Adhyayan School, Mysore</span>
+        <select class="route-dropdown_14" id="school14-route" >
+            <option value=""> Select Route      </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_14" onclick="showMap_14('school14')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Shree Mahaveer Jain Vidyalaya, Mysore</span>
+        <select class="route-dropdown_15" id="school15-route" >
+            <option value=""> Select Route      </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_15" onclick="showMap_15('school15')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> BGS Central School, Mysore </span>
+        <select class="route-dropdown_16" id="school16-route" >
+            <option value=""> Select Route      </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_16" onclick="showMap_16('school16')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+    <div class="school">
+        <span class="school-name"><i class="fa-solid fa-hotel"></i> Vidya Vardhaka School, Mysore </span>
+        <select class="route-dropdown_17" id="school17-route" >
+            <option value=""> Select Route      </option>
+            <option value="Route 1">Route 1     </option>
+            <option value="Route 2">Route 2     </option>
+            <option value="Route 3">Route 3     </option>
+        </select>
+        <button class="show-map-button_17" onclick="showMap_17('school17')">Show Map <i class="fa-solid fa-location-dot"></i> </button>
+    </div>
+
+<script src="Main_Scrpit.js"></script>
+</body>
+</html>

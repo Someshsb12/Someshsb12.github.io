@@ -1,0 +1,1 @@
+var json_Schoolname_2 = {"type":"FeatureCollection","name":"Schoolname_2","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"School nam":"Royale Concorde International School, Mysore"},"geometry":{"type":"Point","coordinates":[76.607141712956846,12.310996097526704]}}]}

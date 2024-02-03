@@ -1,0 +1,1 @@
+var json_School_2 = {"type":"FeatureCollection","name":"School_2","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"School_Nam":"Dayananda Arya Vidya Public School, Mysore"},"geometry":{"type":"Point","coordinates":[76.646966841336052,12.270530058312433]}}]}
